@@ -1,0 +1,19 @@
+.nav {
+  margin-left: auto;
+}
+
+.nav__list {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+/* .nav__item {} */
+
+.nav__link {
+  display: block;
+  padding: 5px 8px;
+  color: $color-default-white;
+  text-decoration: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}

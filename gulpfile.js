@@ -39,7 +39,7 @@ const js = () => {
 };
 
 const svgo = () => {
-  return gulp.src('source/img/**/*.{svg}')
+  return gulp.src(['source/img/**/*.{svg}','!source/img/sprite/*.svg'])
       .pipe(imagemin([
         imagemin.svgo({
             plugins: [
@@ -60,7 +60,7 @@ const sprite = () => {
 };
 
 const copySvg = () => {
-  return gulp.src('source/img/**/*.svg', {base: 'source'})
+  return gulp.src(['source/img/**/*.svg', '!source/img/sprite/*.svg'])
       .pipe(gulp.dest('build'));
 };
 
@@ -75,6 +75,7 @@ const copy = () => {
     'source/fonts/**',
     'source/img/**',
     'source/favicon/**',
+    '!source/img/sprite/**'
   ], {
     base: 'source',
   })
@@ -88,7 +89,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
@@ -113,7 +114,23 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js);
+const createWebp = () => {
+  const root = '';
+  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest(`build/img/${root}`));
+};
+
+const optimizeImages = () => {
+  return gulp.src('build/img/**/*.{png,jpg}')
+      .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.mozjpeg({quality: 75, progressive: true}),
+      ]))
+      .pipe(gulp.dest('build/img'));
+};
+
+const build = gulp.series(clean, svgo, copy, css, sprite, js, optimizeImages, createWebp);
 
 const start = gulp.series(build, syncServer);
 
@@ -125,22 +142,6 @@ const start = gulp.series(build, syncServer);
 
 // root = '' - по дефолту webp добавляются и обналяются во всех папках в source/img/
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
-
-const createWebp = () => {
-  const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(`source/img/${root}`));
-};
-
-const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
-      .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.mozjpeg({quality: 75, progressive: true}),
-      ]))
-      .pipe(gulp.dest('build/img'));
-};
 
 exports.imagemin = optimizeImages;
 exports.webp = createWebp;

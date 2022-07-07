@@ -1,0 +1,40 @@
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 100px;
+  max-width: 1160px;
+  margin: 120px auto;
+}
+
+.about-us__map {
+  width: 560px;
+  height: 306px;
+  background-color: $color-tangaroa-blue;
+}
+
+/* .about-us__inner {} */
+
+.about-us__text {
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 150%;
+}
+
+.about-us__address {
+  margin-top: 45px;
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  background: url("../img/svg/icon-pin.svg") no-repeat 2px 2px/18px 22px;
+}
+
+.about-us__phone {
+  display: block;
+  margin-top: 33px;
+  padding-left: 30px;
+  color: $color-tangaroa-blue;
+  background: url("../img/svg/icon-phone.svg") no-repeat 2px 2px/18px 18px;
+}

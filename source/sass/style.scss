@@ -11,9 +11,9 @@
 @import "variables";
 @import "mixins";
 @import "global/fonts";
+@import "global/body";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
@@ -22,9 +22,16 @@
 @import "blocks/modal";
 @import "blocks/header";
 @import "blocks/nav";
+@import "blocks/main";
 @import "blocks/advantages";
 @import "blocks/travel";
-
+@import "blocks/cruises";
+@import "blocks/product-card";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/about-us";
+@import "blocks/footer";
+@import "blocks/social";
 
 // ---------------------------------
 

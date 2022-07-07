@@ -1,0 +1,28 @@
+.footer {
+  flex-shrink: 0;
+
+  background-color: $color-tangaroa-blue;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 138px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+}
+
+.footer__link {
+  display: block;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 125%;
+  color: $color-alice-blue;
+}

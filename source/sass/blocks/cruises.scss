@@ -1,0 +1,22 @@
+.cruises {
+  margin-top: 111px;
+}
+
+.cruises__title {
+  margin: 0;
+  margin-bottom: 48px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 150%;
+}
+
+.cruises__inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  gap: 30px;
+}

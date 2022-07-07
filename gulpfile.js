@@ -73,8 +73,8 @@ const copy = () => {
   return gulp.src([
     'source/**.html',
     'source/fonts/**',
-    'source/img/**',
     'source/favicon/**',
+    'source/img/svg/**',
     '!source/img/sprite/**'
   ], {
     base: 'source',
@@ -122,7 +122,7 @@ const createWebp = () => {
 };
 
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}')
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),

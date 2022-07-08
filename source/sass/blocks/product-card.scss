@@ -12,6 +12,10 @@
     padding-right: 35px;
     justify-self: center;
   }
+
+  @include vp-767 {
+    width: 273px;
+  }
 }
 
 .product-card__title {

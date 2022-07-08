@@ -17,6 +17,10 @@
     padding-right: 26px;
     min-height: 120px;
   }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .footer__list {

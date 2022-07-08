@@ -3,10 +3,35 @@ import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
 
+let navMain = document.querySelector('.nav');
+let navToggle = document.querySelector('.header__toggle');
+let map = document.querySelector('.about-us__map');
+
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
+
+
+  navMain.classList.remove('nav--nojs');
+  navToggle.classList.remove('header__toggle--nojs');
+  map.classList.remove('about-us__map--nojs');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('nav--opened')) {
+      navMain.classList.add('nav--closed');
+      navMain.classList.remove('nav--opened');
+      navToggle.classList.add('page-header__toggle--closed');
+      navToggle.classList.remove('page-header__toggle--opened');
+    } else {
+      navMain.classList.remove('nav--closed');
+      navMain.classList.add('nav--opened');
+      navToggle.classList.remove('page-header__toggle--closed');
+      navToggle.classList.add('page-header__toggle--opened');
+    }
+  });
+
 
   iosVhFix();
 

@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   margin-left: auto;
 }
 
@@ -37,4 +38,25 @@
     font-size: 0.88rem;
     line-height: 121%;
   }
+}
+
+/* @include vp-767 {
+
+} */
+.nav__wrapper {
+  display: none;
+}
+
+.nav--opened .nav__wrapper {
+  position: absolute;
+  z-index: 1100;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav--closed .nav__wrapper {
+  display: none;
 }

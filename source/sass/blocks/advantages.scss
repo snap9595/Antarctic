@@ -48,6 +48,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 30px;
   }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .advantages__item {
@@ -61,6 +67,10 @@
     padding: 19px 7px 21px 19px;
     width: 206px;
     justify-self: center;
+  }
+
+  @include vp-767 {
+    width: 273px;
   }
 }
 

@@ -35,4 +35,10 @@
     padding-right: 50px;
     gap: 30px;
   }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

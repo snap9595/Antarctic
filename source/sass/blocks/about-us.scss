@@ -4,7 +4,7 @@
   align-items: center;
   column-gap: 100px;
   max-width: 1160px;
-  margin: 120px auto;
+  margin: 120px auto 119px;
 }
 
 .about-us__map {
@@ -16,25 +16,26 @@
 /* .about-us__inner {} */
 
 .about-us__text {
+  margin: 0;
   font-weight: 500;
   font-size: 1.13rem;
   line-height: 150%;
 }
 
 .about-us__address {
-  margin-top: 45px;
-  padding-left: 30px;
+  margin-top: 33px;
+  margin-bottom: 21px;
+  padding-left: 28px;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  background: url("../img/svg/icon-pin.svg") no-repeat 2px 2px/18px 22px;
+  background: url("../img/svg/icon-pin.svg") no-repeat 0 -1px/18px 22px;
 }
 
 .about-us__phone {
   display: block;
-  margin-top: 33px;
-  padding-left: 30px;
+  padding-left: 28px;
   color: $color-tangaroa-blue;
-  background: url("../img/svg/icon-phone.svg") no-repeat 2px 2px/18px 18px;
+  background: url("../img/svg/icon-phone.svg") no-repeat 0 0/18px 18px;
 }

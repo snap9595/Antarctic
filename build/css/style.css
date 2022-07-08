@@ -773,17 +773,21 @@ button,
   max-width: 1196px;
   margin: 0 auto;
   padding-top: 33px;
-  padding-left: 26px;
+  padding-left: 17px;
   padding-right: 3px;
 }
+
+/* .header__logo {
+  padding-left: 1px;
+} */
 
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -794,8 +798,8 @@ button,
 }
 
 .header__wrap {
-  margin-top: 198px;
-  margin-left: 89px;
+  margin-top: 196px;
+  margin-left: 96px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -817,14 +821,24 @@ button,
 }
 
 .nav__list {
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  padding-right: 7px;
   list-style: none;
 }
 
-/* .nav__item {} */
+.nav__item {
+  margin-left: 20px;
+}
 
 .nav__link {
   display: block;
@@ -918,15 +932,14 @@ button,
 }
 
 .travel {
-  max-width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 1160px;
+  margin: 20px auto 120px;
 }
 
 .travel__wrapper {
@@ -1117,7 +1130,7 @@ button,
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
 }
 
 .contacts__wrapper {
@@ -1126,12 +1139,15 @@ button,
 }
 
 .contacts__title {
+  margin: 0;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 150%;
 }
 
 .contacts__text {
+  margin-top: 10px;
+  margin-bottom: 7px;
   font-weight: 400;
   font-size: 1.13rem;
   line-height: 150%;
@@ -1141,11 +1157,12 @@ button,
   width: 403px;
   min-height: 455px;
   margin-right: 60px;
-  padding: 50px;
+  padding: 42px 50px 48px 48px;
   background-color: #011c40;
 }
 
 .contacts__form-text {
+  margin: 0;
   font-weight: 500;
   font-size: 1.13rem;
   line-height: 150%;
@@ -1160,6 +1177,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: 27px;
 }
 
 .form__list {
@@ -1168,7 +1186,7 @@ button,
 }
 
 .form__item {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .form__label {
@@ -1176,7 +1194,7 @@ button,
 }
 
 .form__input {
-  height: 43px;
+  height: 45px;
   width: 100%;
   padding: 11px 16px;
   font-weight: 400;
@@ -1195,8 +1213,8 @@ button,
 .form__control-mark::before {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
+  top: 1px;
+  left: 2px;
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
@@ -1207,7 +1225,7 @@ button,
   width: 12px;
   height: 8px;
   top: 7px;
-  left: 3px;
+  left: 5px;
   opacity: 0;
 }
 
@@ -1217,7 +1235,7 @@ button,
 
 .form__control-text {
   display: block;
-  padding-top: 3px;
+  padding-top: 4px;
   padding-left: 22px;
   font-weight: 400;
   font-size: 0.63rem;
@@ -1236,9 +1254,9 @@ button,
 }
 
 .form__button {
-  margin-top: 27px;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  margin-top: 31px;
+  padding-top: 10px;
+  padding-bottom: 11px;
   cursor: pointer;
   font-weight: 600;
   font-size: 0.88rem;
@@ -1267,7 +1285,7 @@ button,
   -moz-column-gap: 100px;
   column-gap: 100px;
   max-width: 1160px;
-  margin: 120px auto;
+  margin: 120px auto 119px;
 }
 
 .about-us__map {
@@ -1279,27 +1297,28 @@ button,
 /* .about-us__inner {} */
 
 .about-us__text {
+  margin: 0;
   font-weight: 500;
   font-size: 1.13rem;
   line-height: 150%;
 }
 
 .about-us__address {
-  margin-top: 45px;
-  padding-left: 30px;
+  margin-top: 33px;
+  margin-bottom: 21px;
+  padding-left: 28px;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  background: url("../img/svg/icon-pin.svg") no-repeat 2px 2px/18px 22px;
+  background: url("../img/svg/icon-pin.svg") no-repeat 0px -1px/18px 22px;
 }
 
 .about-us__phone {
   display: block;
-  margin-top: 33px;
-  padding-left: 30px;
+  padding-left: 28px;
   color: #011c40;
-  background: url("../img/svg/icon-phone.svg") no-repeat 2px 2px/18px 18px;
+  background: url("../img/svg/icon-phone.svg") no-repeat 0px 0px/18px 18px;
 }
 
 .footer {
@@ -1327,12 +1346,24 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-left: 30px;
+  margin-right: auto;
   list-style: none;
+}
+
+.footer__item {
+  padding-right: 13px;
 }
 
 .footer__link {
   display: block;
-  padding: 5px 10px;
+  padding: 7px 10px 5px;
   font-weight: 500;
   font-size: 1rem;
   line-height: 125%;
@@ -1343,16 +1374,23 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 350px;
   list-style: none;
+  margin: 0;
 }
 
 .social__item {
-  margin-left: 5px;
+  margin-left: 22px;
 }
 
 .social__link {
   display: block;
-  padding: 5px;
+  padding: 15px 1px 5px 4px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

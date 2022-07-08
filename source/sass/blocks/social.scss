@@ -1,13 +1,17 @@
 .social__list {
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 350px;
   list-style: none;
+  margin: 0;
 }
 
 .social__item {
-  margin-left: 5px;
+  margin-left: 22px;
 }
 
 .social__link {
   display: block;
-  padding: 5px;
+  padding: 15px 1px 5px 4px;
 }

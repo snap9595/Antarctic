@@ -3,12 +3,19 @@
 }
 
 .nav__list {
-  margin: 0;
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  padding-right: 7px;
   list-style: none;
 }
 
-/* .nav__item {} */
+.nav__item {
+  margin-left: 20px;
+}
 
 .nav__link {
   display: block;

@@ -5,13 +5,49 @@
   max-width: 350px;
   list-style: none;
   margin: 0;
+
+  @include vp-1365 {
+    max-width: 280px;
+  }
 }
 
 .social__item {
   margin-left: 22px;
+
+  @include vp-1365 {
+    margin-left: 10px;
+    margin-right: 12px;
+  }
 }
 
 .social__link {
   display: block;
   padding: 15px 1px 5px 4px;
+
+  @include vp-1365 {
+    padding: 0;
+  }
+}
+
+@include vp-1365 {
+  .social__link--facebook {
+    width: 9px;
+    height: 16px;
+  }
+
+  .social__link--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social__link--twitter {
+    width: 16px;
+    height: 13px;
+  }
+}
+
+.social__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

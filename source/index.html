@@ -17,14 +17,14 @@
 <body class="body">
   <header class="header">
     <picture>
-      <source type="image/webp" media="(min-width: 1024px)"
+      <source type="image/webp" media="(min-width: 1365px)"
         srcset="img/header-bg-desktop@1x.webp 1x, img/header-bg-desktop@2x.webp 2x">
       <source type="image/webp" media="(min-width: 768px)"
         srcset="img/header-bg-tablet@1x.webp 1x, img/header-bg-tablet@2x.webp 2x">
       <source type="image/webp" srcset="img/header-bg-mobile@1x.webp 1x, img/products/aline-mobile@2x.webp 2x">
 
       <!-- 1х: 260px; 2x: 520px -->
-      <source media="(min-width: 1024px)"
+      <source media="(min-width: 1365px)"
         srcset="img/header-bg-desktop@1x.jpg 1x, img/products/aline-desktop@2x.jpg 2x">
       <!-- 1х: 309px; 2x: 618px -->
       <source media="(min-width: 768px)" srcset="img/header-bg-tablet@1x.jpg 1x, img/header-bg-tablet@2x.jpg 2x">
@@ -35,7 +35,7 @@
     <div class="header__inner">
       <div class="header__wrapper">
         <a class="header__logo" aria-current="page">
-          <img src="./img/svg/logo.svg" alt="Логотип сайта Круизы в Антарктику.">
+          <img class="header__logo-img" src="./img/svg/logo.svg" alt="Логотип сайта Круизы в Антарктику.">
         </a>
         <button class="header__toggle header__toggle--closed header__toggle--nojs" type="button"><span
             class="visually-hidden">Открыть меню.</span>
@@ -66,22 +66,23 @@
   <main class="main">
     <section class="travel">
       <div class="travel__wrapper">
-        <h2 class="travel__title">Путешествие на край Земли</h2>
-        <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром
-          Антарктики. Наш круизный
-          лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,
-          морских котиков и многое другое.</p>
+        <h2 class="travel__title">Путешествие <br> на край Земли</h2>
+        <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром
+          Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги,
+          несколько видов пингвинов, китов,
+          морских котиков и многое другое.
+        </p>
       </div>
       <picture>
         <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
+          <source type="image/webp" media="(min-width: 1365px)"
             srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
 
           <!-- 1х: 560px; 2x: 1120px -->
-          <source media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.jpg 1x, img/penguins-desktop@2x.jpg 2x">
+          <source media="(min-width: 1365px)" srcset="img/penguins-desktop@1x.jpg 1x, img/penguins-desktop@2x.jpg 2x">
           <!-- 1х: 324px; 2x: 648px -->
           <source media="(min-width: 768px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
           <!-- 1х: 290px; 2x: 580px -->
@@ -91,14 +92,14 @@
     </section>
     <section class="advantages">
       <picture>
-        <source type="image/webp" media="(min-width: 1024px)"
+        <source type="image/webp" media="(min-width: 1365px)"
           srcset="img/advantages-bg-desktop@1x.webp 1x, img/advantages-bg-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/advantages-bg-tablet@1x.webp 1x, img/advantages-bg-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/advantages-bg-mobile@1x.webp 1x, img/advantages-bg-mobile@2x.webp 2x">
 
         <!-- 1х: 1366px; 2x: 2732px -->
-        <source media="(min-width: 1024px)"
+        <source media="(min-width: 1365px)"
           srcset="img/advantages-bg-desktop@1x.jpg 1x, img/advantages-bg-desktop@2x.jpg 2x">
         <!-- 1х: 768px; 2x: 1536px -->
         <source media="(min-width: 768px)"
@@ -111,7 +112,7 @@
         <h2 class="advantages__title" id="advantages">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <svg class="advantages__svg" width="27" height="32">
+            <svg class="advantages__svg advantages__svg--ship" width="27" height="32">
               <use href="img/sprite_auto.svg#icon-ship"></use>
             </svg>
             <div class="advantages__inner">
@@ -126,7 +127,7 @@
               <use href="img/sprite_auto.svg#icon-ticks"></use>
             </svg>
             <div class="advantages__inner">
-              <h3 class="advantages__subtitle">Система все включено</h3>
+              <h3 class="advantages__subtitle">Система все&nbsp;включено</h3>
               <p class="advantages__text">Все наши круизы работают
                 по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
             </div>
@@ -137,9 +138,9 @@
             </svg>
             <div class="advantages__inner">
               <h3 class="advantages__subtitle">Экскурсионные туры на&nbsp;Zodiac</h3>
-              <p class="advantages__text">Экскурсионные туры к берегам Антарктиды совершаются<br>на оборудованных лодках
-                типа<br>
-                Zodiac в сопровождении опытных экскурсоводов.</p>
+              <p class="advantages__text">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на оборудованных
+                лодках&nbsp;типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.
+              </p>
             </div>
           </li>
         </ul>
@@ -173,7 +174,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/astoria-desktop@1x.webp 1x, img/products/astoria-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/astoria-tablet@1x.webp 1x, img/products/astoria-tablet@2x.webp 2x">
@@ -181,7 +182,7 @@
               srcset="img/products/astoria-mobile@1x.webp 1x, img/products/astoria-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/astoria-desktop@1x.jpg 1x, img/products/astoria-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -217,7 +218,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/aline-desktop@1x.webp 1x, img/products/aline-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/aline-tablet@1x.webp 1x, img/products/aline-tablet@2x.webp 2x">
@@ -225,7 +226,7 @@
               srcset="img/products/aline-mobile@1x.webp 1x, img/products/aline-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/aline-desktop@1x.jpg 1x, img/products/aline-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -261,7 +262,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/atlantis-desktop@1x.webp 1x, img/products/atlantis-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/atlantis-tablet@1x.webp 1x, img/products/atlantis-tablet@2x.webp 2x">
@@ -269,7 +270,7 @@
               srcset="img/products/atlantis-mobile@1x.webp 1x, img/products/atlantis-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/atlantis-desktop@1x.jpg 1x, img/products/atlantis-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -304,7 +305,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/odysseus-desktop@1x.webp 1x, img/products/odysseus-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/odysseus-tablet@1x.webp 1x, img/products/odysseus-tablet@2x.webp 2x">
@@ -312,7 +313,7 @@
               srcset="img/products/odysseus-mobile@1x.webp 1x, img/products/odysseus-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/odysseus-desktop@1x.jpg 1x, img/products/odysseus-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -348,7 +349,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/olympia-desktop@1x.webp 1x, img/products/olympia-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/olympia-tablet@1x.webp 1x, img/products/olympia-tablet@2x.webp 2x">
@@ -356,7 +357,7 @@
               srcset="img/products/olympia-mobile@1x.webp 1x, img/products/olympia-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/olympia-desktop@1x.jpg 1x, img/products/olympia-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -392,7 +393,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/aurora-desktop@1x.webp 1x, img/products/aurora-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/aurora-tablet@1x.webp 1x, img/products/aurora-tablet@2x.webp 2x">
@@ -400,7 +401,7 @@
               srcset="img/products/aurora-mobile@1x.webp 1x, img/products/aurora-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/aurora-desktop@1x.jpg 1x, img/products/aurora-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -436,7 +437,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/leonor-desktop@1x.webp 1x, img/products/leonor-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/leonor-tablet@1x.webp 1x, img/products/leonor-tablet@2x.webp 2x">
@@ -444,7 +445,7 @@
               srcset="img/products/leonor-mobile@1x.webp 1x, img/products/leonor-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/leonor-desktop@1x.jpg 1x, img/products/leonor-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -480,7 +481,7 @@
             <a class="product-card__link" href="#">Забронировать</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
+            <source type="image/webp" media="(min-width: 1365px)"
               srcset="img/products/minion-desktop@1x.webp 1x, img/products/minion-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/products/minion-tablet@1x.webp 1x, img/products/minion-tablet@2x.webp 2x">
@@ -488,7 +489,7 @@
               srcset="img/products/minion-mobile@1x.webp 1x, img/products/minion-mobile@2x.webp 2x">
 
             <!-- 1х: 260px; 2x: 520px -->
-            <source media="(min-width: 1024px)"
+            <source media="(min-width: 1365px)"
               srcset="img/products/minion-desktop@1x.jpg 1x, img/products/minion-desktop@2x.jpg 2x">
             <!-- 1х: 309px; 2x: 618px -->
             <source media="(min-width: 768px)"
@@ -504,14 +505,14 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <picture>
-        <source type="image/webp" media="(min-width: 1024px)"
+        <source type="image/webp" media="(min-width: 1365px)"
           srcset="img/contacts-bg-desktop@1x.webp 1x, img/contacts-bg-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/contacts-bg-tablet@1x.webp 1x, img/contacts-bg-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/contacts-bg-mobile@1x.webp 1x, img/contacts-bg-mobile@2x.webp 2x">
 
         <!-- 1х: 1366px; 2x: 2732px -->
-        <source media="(min-width: 1024px)"
+        <source media="(min-width: 1365px)"
           srcset="img/contacts-bg-desktop@1x.jpg 1x, img/contacts-bg-desktop@2x.jpg 2x">
         <!-- 1х: 768px; 2x: 1536px -->
         <source media="(min-width: 768px)" srcset="img/contacts-bg-tablet@1x.jpg 1x, img/contacts-bg-tablet@2x.jpg 2x">
@@ -557,19 +558,20 @@
       <h2 class="visually-hidden" id="contacts">Контакты</h2>
       <iframe class="about-us__map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.822607321338!2d30.317409!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639407697076!5m2!1sen!2sru"
-        width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
       <div class="about-us__inner">
         <p class="about-us__text">У вас ещё остались вопросы или сомнения?
-          Приезжайте к нам в офис и мы вам все расскажем.
+          Приезжайте к нам в&nbsp;офис и мы вам все расскажем.
         </p>
-        <address class="about-us__address">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+        <address class="about-us__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
         <a class="about-us__phone" href="tel:+78002000000">8-800-200-00-00</a>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrap">
-      <img src="./img/svg/logo.svg" alt="Логотип сайта Круизы в Антарктику.">
+      <img class="footer__logo" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику.">
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link" href="#advantages">Преимущества</a>
@@ -587,21 +589,22 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy" aria-label="facebook.">
+            <a class="social__link social__link--facebook" href="https://vk.com/htmlacademy" aria-label="facebook.">
               <svg class="social__icon" width="11" height="20">
                 <use href="img/sprite_auto.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy/"><svg class="social__icon" width="21"
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/"><svg class="social__icon"
+                width="21"
                 height="20">
                 <use href="img/sprite_auto.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
               <svg class="social__icon" width="20" height="17">
                 <use href="img/sprite_auto.svg#icon-twitter"></use>
               </svg>

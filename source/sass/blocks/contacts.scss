@@ -2,6 +2,10 @@
   position: relative;
   min-height: 555px;
   margin-top: 120px;
+
+  @include vp-1365 {
+    margin-top: 101px;
+  }
 }
 
 .contacts__img {
@@ -28,12 +32,22 @@
   margin-right: auto;
   padding-top: 50px;
   padding-bottom: 48px;
+
+  @include vp-1365 {
+    flex-direction: column;
+    padding-top: 88px;
+    padding-bottom: 99px;
+  }
 }
 
 
 .contacts__wrapper {
   width: 494px;
   margin-left: 60px;
+
+  @include vp-1365 {
+    margin-left: 0;
+  }
 }
 
 .contacts__title {
@@ -41,6 +55,11 @@
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 150%;
+
+  @include vp-1365 {
+    font-size: 2.13rem;
+    text-align: center;
+  }
 }
 
 .contacts__text {
@@ -49,6 +68,11 @@
   font-weight: 400;
   font-size: 1.13rem;
   line-height: 150%;
+
+  @include vp-1365 {
+    margin-top: 5px;
+    text-align: center;
+  }
 }
 
 .contacts__form-wrapper {
@@ -57,6 +81,12 @@
   margin-right: 60px;
   padding: 42px 50px 48px 48px;
   background-color: $color-tangaroa-blue;
+
+  @include vp-1365 {
+    margin-top: 44px;
+    margin-right: 0;
+    padding: 44px 48px 48px 49px;
+  }
 }
 
 .contacts__form-text {

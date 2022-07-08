@@ -1,5 +1,9 @@
 .cruises {
   margin-top: 111px;
+
+  @include vp-1365 {
+    margin-top: 89px;
+  }
 }
 
 .cruises__title {
@@ -9,6 +13,11 @@
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 150%;
+
+  @include vp-1365 {
+    font-size: 1.62rem;
+    margin-bottom: 50px;
+  }
 }
 
 .cruises__inner {
@@ -19,4 +28,11 @@
   display: grid;
   grid-template-columns: repeat(4, 260px);
   gap: 30px;
+
+  @include vp-1365 {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 49px;
+    padding-right: 50px;
+    gap: 30px;
+  }
 }

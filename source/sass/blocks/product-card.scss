@@ -5,22 +5,39 @@
   padding-bottom: 7px;
   color: $color-default-white;
   background-color: $color-tangaroa-blue;
+
+  @include vp-1365 {
+    width: 309px;
+    padding-left: 35px;
+    padding-right: 35px;
+    justify-self: center;
+  }
 }
 
 .product-card__title {
   position: absolute;
   z-index: 3;
-  bottom: 0;
   left: 30px;
+  bottom: 0;
   color: $color-alice-blue;
   font-size: 1.13rem;
   font-weight: 500;
   line-height: 150%;
+
+  @include vp-1365 {
+    left: 36px;
+    bottom: 2px;
+  }
 }
 
 .product-card:hover .product-card__title {
   top: 5px;
   left: 25px;
+  bottom: auto;
+
+  @include vp-1365 {
+    left: 35px;
+  }
 }
 
 .product-card__list {
@@ -50,7 +67,7 @@
   z-index: 1;
   right: 0;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   bottom: 0;
   background-image: $blue-to-white;

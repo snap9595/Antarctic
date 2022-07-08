@@ -3,18 +3,38 @@
   justify-content: space-between;
   max-width: 1160px;
   margin: 20px auto 120px;
+
+  @include vp-1365 {
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2px;
+    padding-left: 23px;
+    padding-right: 21px;
+    margin-bottom: 93px;
+  }
 }
 
 .travel__wrapper {
   width: 512px;
   margin-top: 56px;
+
+  @include vp-1365 {
+    width: 324px;
+    margin-top: 0;
+  }
 }
 
 .travel__title {
   margin: 0;
   font-size: 1.75rem;
+  font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.01rem;
+
+  @include vp-1365 {
+    font-size: 1.63rem;
+    line-height: 140%;
+  }
 }
 
 .travel__text {
@@ -22,8 +42,18 @@
   margin-top: 24px;
   font-size: 1rem;
   line-height: 150%;
+
+  @include vp-1365 {
+    margin-top: 15px;
+  }
 }
 
 .travel__img {
-  min-width: 560px;
+  width: 560px;
+  height: 301px;
+
+  @include vp-1365 {
+    width: 324px;
+    height: 264px;
+  }
 }

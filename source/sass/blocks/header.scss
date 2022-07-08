@@ -4,6 +4,10 @@
   color: $color-default-white;
   margin-bottom: 89px;
   flex-shrink: 0;
+
+  @include vp-1365 {
+    min-height: 638px;
+  }
 }
 
 .header__img {
@@ -27,16 +31,39 @@
   padding-top: 33px;
   padding-left: 17px;
   padding-right: 3px;
+
+  @include vp-1365 {
+    padding-top: 26px;
+    padding-left: 36px;
+    padding-right: 29px;
+  }
 }
 
-/* .header__logo {
-  padding-left: 1px;
-} */
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__logo {
+  width: 78px;
+  height: 38px;
+
+  @include vp-1365 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 38px;
+    height: 20px;
+  }
+}
+
+.header__logo-img {
+  width: 100%;
+  height: 100%;
 }
 
 .header__toggle {
@@ -53,12 +80,24 @@
   margin-top: 196px;
   margin-left: 96px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1365 {
+    margin-top: 214px;
+    margin-left: 0;
+  }
 }
 
 .header__title {
   margin: 0;
   font-size: 3.38rem;
+  font-weight: 700;
   line-height: 122%;
+  color: $color-alice-blue;
+
+  @include vp-1365 {
+    font-size: 3.13rem;
+    line-height: 122%;
+  }
 }
 
 .header__text {
@@ -66,4 +105,11 @@
   margin-top: 11px;
   font-size: 1.25rem;
   line-height: 120%;
+  color: $color-alice-blue;
+
+  @include vp-1365 {
+    margin-top: 13px;
+    font-size: 1.13rem;
+    line-height: 122%;
+  }
 }

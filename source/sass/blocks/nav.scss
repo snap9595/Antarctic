@@ -11,16 +11,30 @@
   padding: 0;
   padding-right: 7px;
   list-style: none;
+
+  @include vp-1365 {
+    padding-right: 0;
+  }
 }
 
 .nav__item {
   margin-left: 20px;
+
+  @include vp-1365 {
+    margin-left: 9px;
+  }
 }
 
 .nav__link {
   display: block;
   padding: 5px 8px;
-  color: $color-default-white;
+  line-height: 125%;
+  color: $color-alice-blue;
   text-decoration: none;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  @include vp-1365 {
+    font-size: 0.88rem;
+    line-height: 121%;
+  }
 }

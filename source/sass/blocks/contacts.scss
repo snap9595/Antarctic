@@ -65,6 +65,14 @@
   }
 }
 
+.contacts__wrapper br {
+  display: none;
+
+  @include vp-767 {
+    display: inline;
+  }
+}
+
 .contacts h2 {
   margin: 0;
   font-weight: 700;
@@ -96,7 +104,7 @@
   }
 
   @include vp-767 {
-    margin: 12px 24px 0;
+    margin: 12px 5px 0;
     font-size: 1rem;
     line-height: 140%;
   }

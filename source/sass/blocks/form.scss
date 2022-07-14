@@ -66,6 +66,7 @@ form input[id="agreement"]:focus ~ .form__control-mark::before {
 
 .form__svg {
   position: absolute;
+  display: block;
   width: 12px;
   height: 8px;
   top: 7px;

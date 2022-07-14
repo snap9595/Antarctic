@@ -4,9 +4,13 @@
   @include vp-1365 {
     margin-top: 89px;
   }
+
+  @include vp-767 {
+    margin-top: 57px;
+  }
 }
 
-.cruises__title {
+.cruises h2 {
   margin: 0;
   margin-bottom: 48px;
   text-align: center;
@@ -15,30 +19,35 @@
   line-height: 150%;
 
   @include vp-1365 {
-    font-size: 1.62rem;
     margin-bottom: 50px;
+    font-size: 1.63rem;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
   }
 }
 
 .cruises__inner {
   max-width: 1160px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 14px;
+  padding-right: 17px;
   display: grid;
-  grid-template-columns: repeat(4, 260px);
+  grid-template-columns: repeat(4, minmax(200px, 260px));
   gap: 30px;
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 49px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
     gap: 30px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

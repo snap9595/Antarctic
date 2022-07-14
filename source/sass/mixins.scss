@@ -1,5 +1,6 @@
 @mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     @content;
   }
 }
@@ -7,7 +8,7 @@
 // Desktop first
 
 @mixin vp-1365 {
-  @media (max-width: $vp-1366 - 1) {
+  @media (max-width: $vp-1024 - 1) {
     @content;
   }
 }

@@ -1,62 +1,130 @@
 .nav {
   position: relative;
   margin-left: auto;
+
+  @include vp-767 {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
-.nav__list {
+.nav__wrapper ul {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   max-width: 1000px;
+
   margin: 0;
   padding: 0;
   padding-right: 7px;
   list-style: none;
 
+
   @include vp-1365 {
     padding-right: 0;
   }
-}
 
-.nav__item {
-  margin-left: 20px;
-
-  @include vp-1365 {
-    margin-left: 9px;
+  @include vp-767 {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 76px;
+    height: 100%;
+    overflow-y: auto;
   }
 }
 
-.nav__link {
+.nav__wrapper li {
+  margin-left: 20px;
+
+  @include vp-1365 {
+    margin-left: 8px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 8px;
+  }
+}
+
+.nav__wrapper a {
   display: block;
   padding: 5px 8px;
   line-height: 125%;
   color: $color-alice-blue;
+  font-weight: 500;
   text-decoration: none;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  &:hover {
+    color: $color-quartz-grey;
+  }
 
   @include vp-1365 {
     font-size: 0.88rem;
     line-height: 121%;
   }
+
+  @include vp-767 {
+    padding: 10px 16px;
+    color: $color-tangaroa-blue;
+    font-size: 1.13rem;
+    line-height: 122%;
+
+    &:hover {
+      color: $color-contacts-background;
+    }
+  }
 }
 
-/* @include vp-767 {
+@include vp-767 {
+  .nav__wrapper {
+    display: none;
+  }
 
-} */
-.nav__wrapper {
-  display: none;
-}
+  .is-open .nav__wrapper {
+    position: absolute;
+    z-index: 8;
+    display: block;
+    width: 89%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: $color-alice-blue;
+  }
 
-.nav--opened .nav__wrapper {
-  position: absolute;
-  z-index: 1100;
-  display: block;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+  .nav__wrapper::before {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: $color-alice-blue;
+  }
 
-.nav--closed .nav__wrapper {
-  display: none;
+  .is-nojs .nav__wrapper {
+    position: static;
+    z-index: 8;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: $color-alice-blue;
+  }
+
+  .header__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7;
+  }
+
+  .is-open + .header__overlay {
+    display: block;
+  }
 }

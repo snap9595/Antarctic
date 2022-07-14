@@ -8,14 +8,16 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 2px;
-    padding-left: 23px;
-    padding-right: 21px;
+    padding-left: 29px;
+    padding-right: 29px;
     margin-bottom: 93px;
   }
 
   @include vp-767 {
     flex-direction: column;
     padding: 15px;
+    padding-top: 16px;
+    margin-bottom: 50px;
   }
 }
 
@@ -29,24 +31,31 @@
   }
 
   @include vp-767 {
-    width: 290px;
+    width: 100%;
   }
 }
 
-.travel__title {
+.travel h2 {
   margin: 0;
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 150%;
-  letter-spacing: -0.01rem;
+  letter-spacing: -0.02rem;
 
   @include vp-1365 {
+    margin-right: 25px;
     font-size: 1.63rem;
-    line-height: 140%;
+    line-height: 139%;
+  }
+
+  @include vp-767 {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    line-height: 142%;
   }
 }
 
-.travel__text {
+.travel p {
   margin: 0;
   margin-top: 24px;
   font-size: 1rem;
@@ -57,12 +66,19 @@
   }
 }
 
-.travel__img {
+.travel img {
   width: 560px;
   height: 301px;
+  background-color: $color-penguins-background;
 
   @include vp-1365 {
     width: 324px;
     height: 264px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 186px;
+    margin-top: 34px;
   }
 }

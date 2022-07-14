@@ -49,7 +49,7 @@ const svgo = () => {
             ]
           }),
       ]))
-      .pipe(gulp.dest('source/img'));
+      .pipe(gulp.dest('build/img'));
 };
 
 const sprite = () => {

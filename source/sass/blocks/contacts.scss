@@ -10,10 +10,11 @@
   @include vp-767 {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 65px;
   }
 }
 
-.contacts__img {
+.contacts img {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -25,7 +26,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  background-color: rgb(61, 189, 228);
+  background-color: $color-contacts-background;
 }
 
 .contacts__inner {
@@ -35,13 +36,18 @@
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+  padding-top: 51px;
   padding-bottom: 48px;
 
   @include vp-1365 {
     flex-direction: column;
-    padding-top: 88px;
+    padding-top: 85px;
     padding-bottom: 99px;
+  }
+
+  @include vp-767 {
+    padding-top: 59px;
+    padding-bottom: 66px;
   }
 }
 
@@ -59,7 +65,7 @@
   }
 }
 
-.contacts__title {
+.contacts h2 {
   margin: 0;
   font-weight: 700;
   font-size: 2.5rem;
@@ -69,18 +75,30 @@
     font-size: 2.13rem;
     text-align: center;
   }
+
+  @include vp-767 {
+    font-size: 1.5rem;
+    line-height: 130%;
+  }
 }
 
-.contacts__text {
+.contacts__wrapper p {
   margin-top: 10px;
+  margin-right: 108px;
   margin-bottom: 7px;
   font-weight: 400;
   font-size: 1.13rem;
   line-height: 150%;
 
   @include vp-1365 {
-    margin-top: 5px;
+    margin: 5px 55px 0;
     text-align: center;
+  }
+
+  @include vp-767 {
+    margin: 12px 24px 0;
+    font-size: 1rem;
+    line-height: 140%;
   }
 }
 
@@ -88,25 +106,31 @@
   width: 403px;
   min-height: 455px;
   margin-right: 60px;
-  padding: 42px 50px 48px 48px;
+  padding: 43px 49px 47px 49px;
   background-color: $color-tangaroa-blue;
 
   @include vp-1365 {
-    margin-top: 44px;
+    margin-top: 53px;
     margin-right: 0;
     padding: 44px 48px 48px 49px;
   }
 
   @include vp-767 {
-    width: 273px;
-    padding: 44px 20px 48px 20px;
+    width: 100%;
+    margin-top: 34px;
+    padding: 35px 28px 38px 28px;
   }
 }
 
-.contacts__form-text {
+.contacts__form-wrapper p {
   margin: 0;
   font-weight: 500;
   font-size: 1.13rem;
   line-height: 150%;
   color: $color-alice-blue;
+
+  @include vp-767 {
+    line-height: 140%;
+    text-align: center;
+  }
 }

@@ -4,20 +4,28 @@
   margin-top: 27px;
 }
 
-.form__list {
+.form ul {
   margin: 0;
   padding: 0;
 }
 
-.form__item {
+.form li {
   padding-bottom: 18px;
+
+  @include vp-1365 {
+    padding-bottom: 18px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 18px;
+  }
 }
 
-.form__label {
+.form label {
   position: relative;
 }
 
-.form__input {
+.form input {
   height: 45px;
   width: 100%;
   padding: 11px 16px;
@@ -27,9 +35,18 @@
   color: $color-tangaroa-blue;
   background-color: $color-alice-blue;
 
-  &--agreement {
-    max-width: min-content;
+  &:hover {
+    background-color: $color-quartz-grey;
   }
+}
+
+.form input::placeholder {
+  color: $color-tangaroa-blue-transparent;
+}
+
+form input[id="agreement"] {
+  max-width: min-content;
+  cursor: pointer;
 }
 
 .form__control-mark::before {
@@ -39,7 +56,12 @@
   left: 2px;
   width: 18px;
   height: 18px;
+  border: 2px solid $color-alice-blue;
   background-color: $color-alice-blue;
+}
+
+form input[id="agreement"]:focus ~ .form__control-mark::before {
+  border: 2px solid $color-contacts-background;
 }
 
 .form__svg {
@@ -51,34 +73,42 @@
   opacity: 0;
 }
 
-.form__input--agreement:checked ~ .form__svg {
+.form input[id="agreement"]:checked ~ .form__svg {
   opacity: 1;
 }
 
-.form__control-text {
+.form span {
   display: block;
   padding-top: 4px;
-  padding-left: 22px;
+  padding-left: 12px;
   font-weight: 400;
   font-size: 0.63rem;
   line-height: 130%;
   color: $color-alice-blue;
+  user-select: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    padding-top: 0;
+    padding-left: 15px;
+  }
 }
 
-.form__label--agreement {
+.form label[for="agreement"] {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.form__button {
-  margin-top: 31px;
+.form button {
+  margin-top: 30px;
   padding-top: 10px;
   padding-bottom: 11px;
   cursor: pointer;
   font-weight: 600;
   font-size: 0.88rem;
   line-height: 150%;
+  user-select: none;
   color: $color-tangaroa-blue;
   background-color: $color-alice-blue;
 
@@ -88,5 +118,9 @@
 
   &:active {
     opacity: 0.8;
+  }
+
+  @include vp-767 {
+    margin-top: 23px;
   }
 }

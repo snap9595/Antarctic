@@ -4,6 +4,7 @@ let map = document.querySelector('.about-us__map');
 let logo = document.querySelector('.header__logo');
 let links = navMain.querySelectorAll('.nav__link');
 let overlay = document.querySelector('.header__overlay');
+let telInput = document.querySelectorAll('input[type="tel"]');
 
 const initToggle = () => {
   navMain.classList.remove('is-nojs');
@@ -28,16 +29,24 @@ const initToggle = () => {
   });
 
   function toggleMenu() {
-    if (navMain.classList.contains('is-open')) {
-      navMain.classList.remove('is-open');
-      navToggle.classList.remove('is-open');
-      logo.classList.remove('is-blue');
-      document.body.classList.remove('is-lock');
-    } else {
-      navMain.classList.add('is-open');
-      navToggle.classList.add('is-open');
-      logo.classList.add('is-blue');
-      document.body.classList.add('is-lock');
+    navMain.classList.toggle('is-open');
+    navToggle.classList.toggle('is-open');
+    logo.classList.toggle('is-blue');
+    document.body.classList.toggle('is-lock');
+  }
+
+  for (let i = 0; i < telInput.length; i++) {
+    telInput[i].oninput = function () {
+      initNumber(this);
+    };
+  }
+
+  function initNumber(input) {
+    let value = input.value;
+    let re = /[^0-9\-\(\)\+\ ]/gi;
+    if (re.test(value)) {
+      value = value.replace(re, '');
+      input.value = value;
     }
   }
 };

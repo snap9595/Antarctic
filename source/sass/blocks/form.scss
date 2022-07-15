@@ -44,7 +44,7 @@
   color: $color-tangaroa-blue-transparent;
 }
 
-form input[id="agreement"] {
+.form__agreement input {
   max-width: min-content;
   cursor: pointer;
 }
@@ -60,7 +60,7 @@ form input[id="agreement"] {
   background-color: $color-alice-blue;
 }
 
-form input[id="agreement"]:focus ~ .form__control-mark::before {
+.form__agreement input:focus ~ .form__control-mark::before {
   border: 2px solid $color-contacts-background;
 }
 
@@ -74,7 +74,7 @@ form input[id="agreement"]:focus ~ .form__control-mark::before {
   opacity: 0;
 }
 
-.form input[id="agreement"]:checked ~ .form__svg {
+.form__agreement input:checked ~ .form__svg {
   opacity: 1;
 }
 
@@ -95,7 +95,7 @@ form input[id="agreement"]:focus ~ .form__control-mark::before {
   }
 }
 
-.form label[for="agreement"] {
+.form__agreement label {
   position: relative;
   display: flex;
   align-items: center;

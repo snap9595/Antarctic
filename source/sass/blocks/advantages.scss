@@ -169,7 +169,7 @@
   }
 }
 
-.advantages__inner br {
+.advantages__wrapper br {
   @include vp-1365 {
     display: none;
   }
@@ -187,7 +187,7 @@
   }
 }
 
-.advantages__inner .advantages__br-zodiak {
+.advantages__wrapper .advantages__br-zodiak {
   display: inline;
 
   @include vp-1365 {

@@ -6,7 +6,7 @@
   color: $color-default-white;
   background-color: $color-tangaroa-blue;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 309px;
     padding-left: 35px;
     padding-right: 35px;
@@ -30,7 +30,7 @@
   font-weight: 500;
   line-height: 150%;
 
-  @include vp-1365 {
+  @include vp-1023 {
     left: 36px;
     bottom: 8px;
   }
@@ -46,7 +46,7 @@
   left: 25px;
   bottom: auto;
 
-  @include vp-1365 {
+  @include vp-1023 {
     left: 35px;
   }
 

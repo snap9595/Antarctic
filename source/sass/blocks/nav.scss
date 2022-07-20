@@ -20,7 +20,7 @@
   list-style: none;
 
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-right: 0;
   }
 
@@ -37,7 +37,7 @@
 .nav__wrapper li {
   margin-left: 18px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-left: 7px;
   }
 
@@ -59,7 +59,7 @@
     color: $color-quartz-grey;
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     font-size: 0.88rem;
     line-height: 121%;
   }
@@ -122,9 +122,15 @@
     width: 100vw;
     height: 100vh;
     z-index: 7;
+    background-color: $color-menu-transparent;
   }
 
   .is-open + .header__overlay {
     display: block;
+  }
+
+  .is-open h1,
+  .is-open p {
+    display: none;
   }
 }

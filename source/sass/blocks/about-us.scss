@@ -5,7 +5,12 @@
   max-width: 1160px;
   margin: 120px auto;
 
-  @include vp-1365 {
+  @include vp-1279 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include vp-1023 {
     column-gap: 30px;
     padding: 0 44px;
     margin-top: 99px;
@@ -23,11 +28,11 @@
 }
 
 .about-us__map {
-  max-width: 560px;
+  width: 100%;
   height: 306px;
   background-color: $color-tangaroa-blue;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 324px;
     height: 335px;
     justify-self: center;
@@ -51,7 +56,7 @@
     background-image: url("../img/map-desktop@2x.jpg");
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     background-image: url("../img/svg/icon-pin.svg"), url("../img/map-tablet@1x.jpg");
     background-position: 108px 220px, center;
     background-size: 18px 22px, 325px auto;
@@ -75,7 +80,7 @@
 .about-us__inner {
   align-self: center;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 324px;
     justify-self: center;
   }
@@ -103,7 +108,7 @@
   line-height: 150%;
   background: url("../img/svg/icon-pin.svg") no-repeat 0 -1px/18px 22px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 27px;
     margin-bottom: 20px;
     background-position: 0 3px;
@@ -115,7 +120,8 @@
 }
 
 .about-us__inner a {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding-left: 28px;
   color: $color-tangaroa-blue;
   background: url("../img/svg/icon-phone.svg") no-repeat 0 0/18px 18px;

@@ -1,7 +1,7 @@
 .cruises {
   margin-top: 111px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-top: 89px;
   }
 
@@ -18,7 +18,7 @@
   font-size: 1.75rem;
   line-height: 150%;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-bottom: 50px;
     font-size: 1.63rem;
   }
@@ -38,7 +38,7 @@
   grid-template-columns: repeat(4, minmax(200px, 260px));
   gap: 30px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 60px;
     padding-right: 60px;

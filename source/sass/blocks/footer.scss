@@ -13,7 +13,7 @@
   padding-top: 36px;
   padding-bottom: 38px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 29px 31px 30px 45px;
   }
 
@@ -35,7 +35,7 @@
   margin-right: auto;
   list-style: none;
 
-  @include vp-1365 {
+  @include vp-1023 {
     max-width: 475px;
     padding-left: 9px;
   }
@@ -51,7 +51,7 @@
 .footer__wrap li {
   padding-right: 23px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-right: 13px;
   }
 
@@ -65,7 +65,7 @@
   display: block;
   padding: 12px 10px 5px 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-bottom: 6px;
   }
 
@@ -87,7 +87,7 @@
     color: $color-quartz-grey;
   }
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 6px;
     padding-bottom: 6px;
     font-size: 0.75rem;
@@ -103,7 +103,7 @@
 .footer__logo {
   fill: $color-alice-blue;
 
-  @include vp-1365 {
+  @include vp-1023 {
     width: 38px;
     height: 20px;
   }

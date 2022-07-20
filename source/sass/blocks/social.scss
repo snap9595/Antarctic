@@ -14,7 +14,7 @@
   margin: 0;
   padding-left: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     max-width: 140px;
     padding-left: 0;
   }
@@ -30,7 +30,7 @@
   margin-left: 22px;
   padding-right: 0;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-left: 6px;
     margin-right: 3px;
   }
@@ -45,12 +45,12 @@
   display: block;
   padding: 13px 1px 10px 4px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding: 0;
   }
 }
 
-@include vp-1365 {
+@include vp-1023 {
   .social__link--facebook {
     width: 9px;
     height: 16px;

@@ -4,6 +4,7 @@ let map = document.querySelector('.about-us__map');
 let logo = document.querySelector('.header__logo');
 let links = navMain.querySelectorAll('.nav__link');
 let overlay = document.querySelector('.header__overlay');
+let headerWrap = document.querySelector('.header__wrap');
 let telInput = document.querySelectorAll('input[type="tel"]');
 
 const initToggle = () => {
@@ -33,6 +34,7 @@ const initToggle = () => {
     navToggle.classList.toggle('is-open');
     logo.classList.toggle('is-blue');
     document.body.classList.toggle('is-lock');
+    headerWrap.classList.toggle('is-open');
   }
 
   for (let i = 0; i < telInput.length; i++) {

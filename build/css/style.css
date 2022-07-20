@@ -1180,7 +1180,7 @@ button,
 }
 
 .about-us__map {
-  max-width: 560px;
+  width: 100%;
   height: 306px;
   background-color: #011c40;
 }
@@ -1217,7 +1217,8 @@ button,
 }
 
 .about-us__inner a {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding-left: 28px;
   color: #011c40;
   background: url("../img/svg/icon-phone.svg") no-repeat 0 0/18px 18px;
@@ -1333,7 +1334,23 @@ button,
   }
 } */
 
-@media (max-width: 1364px) {
+@media (max-width: 1279px) {
+  .advantages ul {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .advantages li {
+    width: 100%;
+  }
+
+  .about-us {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
   .header {
     min-height: 638px;
     margin-bottom: 90px;
@@ -1398,7 +1415,6 @@ button,
 
   .advantages li {
     padding: 19px 7px 21px 19px;
-    width: 206px;
     -ms-grid-column-align: center;
     justify-self: center;
   }
@@ -1638,7 +1654,7 @@ button,
   }
 }
 
-@media (max-width: 1364px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1364px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1364px) and (min-resolution: 144dpi), (max-width: 1364px) and (min-resolution: 1.5dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .about-us .is-nojs {
     background-image: url("../img/map-tablet@2x.jpg");
   }
@@ -1867,10 +1883,16 @@ button,
     width: 100vw;
     height: 100vh;
     z-index: 7;
+    background-color: rgba(0, 43, 102, 0.5);
   }
 
   .is-open + .header__overlay {
     display: block;
+  }
+
+  .is-open h1,
+  .is-open p {
+    display: none;
   }
 
   .advantages {
@@ -1892,7 +1914,6 @@ button,
   }
 
   .advantages li {
-    width: 100%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 21px;

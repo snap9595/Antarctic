@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 120px;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-bottom: 100px;
   }
 
@@ -32,7 +32,7 @@
   line-height: 150%;
   text-align: center;
 
-  @include vp-1365 {
+  @include vp-1023 {
     padding-top: 90px;
     font-size: 1.63rem;
   }
@@ -53,7 +53,12 @@
   gap: 20px 40px;
   list-style: none;
 
-  @include vp-1365 {
+  @include vp-1279 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include vp-1023 {
     padding-left: 44px;
     padding-right: 44px;
     grid-template-columns: repeat(3, 1fr);
@@ -76,14 +81,16 @@
   padding-bottom: 24px;
   background-color: $color-default-white;
 
-  @include vp-1365 {
+  @include vp-1279 {
+    width: 100%;
+  }
+
+  @include vp-1023 {
     padding: 19px 7px 21px 19px;
-    width: 206px;
     justify-self: center;
   }
 
   @include vp-767 {
-    width: 100%;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 21px;
@@ -99,7 +106,7 @@
     top: 30px;
     left: 30px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 25px;
       left: 20px;
       width: 21px;
@@ -111,7 +118,7 @@
     top: 35px;
     left: 30px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 29px;
       left: 20px;
       width: 33px;
@@ -123,7 +130,7 @@
     top: 37px;
     left: 30px;
 
-    @include vp-1365 {
+    @include vp-1023 {
       top: 33px;
       left: 20px;
       width: 38px;
@@ -143,7 +150,7 @@
   font-weight: 500;
   line-height: 150%;
 
-  @include vp-1365 {
+  @include vp-1023 {
     line-height: 139%;
   }
 
@@ -159,7 +166,7 @@
   font-size: 0.88rem;
   line-height: 143%;
 
-  @include vp-1365 {
+  @include vp-1023 {
     margin-right: 10px;
   }
 
@@ -170,7 +177,7 @@
 }
 
 .advantages__wrapper br {
-  @include vp-1365 {
+  @include vp-1023 {
     display: none;
   }
 
@@ -190,7 +197,7 @@
 .advantages__wrapper .advantages__br-zodiak {
   display: inline;
 
-  @include vp-1365 {
+  @include vp-1023 {
     display: none;
   }
 }

@@ -713,7 +713,7 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px 40px;
+  gap: 20px 36px;
   list-style: none;
 }
 
@@ -836,6 +836,13 @@ button,
 .product-card {
   position: relative;
   min-height: 386px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 25px;
   padding-bottom: 7px;
   color: #ffffff;
@@ -861,12 +868,13 @@ button,
 
 .product-card ul {
   margin: 0;
-  margin-top: 44px;
+  margin-top: 43px;
   padding: 0;
   list-style: none;
 }
 
 .product-card li {
+  padding-top: 3px;
   padding-bottom: 6px;
 }
 
@@ -914,6 +922,8 @@ button,
 }
 
 .product-card span {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 0.88rem;
   font-weight: 400;
   line-height: 142%;
@@ -922,7 +932,10 @@ button,
 
 .product-card a {
   display: block;
-  margin-top: 18px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-top: 15px;
   margin-bottom: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -940,6 +953,16 @@ button,
 
 .product-card a:hover {
   background-color: #d8d8d9;
+}
+
+.product-card a:focus + h3 {
+  top: 10px;
+  left: 25px;
+  bottom: auto;
+}
+
+.product-card a:focus ~ .product-card__wrap {
+  display: none;
 }
 
 .contacts {
@@ -984,7 +1007,7 @@ button,
 
 .contacts__wrapper {
   width: 494px;
-  margin-left: 60px;
+  margin-left: 59px;
 }
 
 .contacts__wrapper br {
@@ -999,9 +1022,9 @@ button,
 }
 
 .contacts__wrapper p {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 108px;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 1.13rem;
   line-height: 150%;
@@ -1010,7 +1033,7 @@ button,
 .contacts__form-wrapper {
   width: 403px;
   min-height: 455px;
-  margin-right: 60px;
+  margin-right: 62px;
   padding: 43px 49px 47px 49px;
   background-color: #011c40;
 }
@@ -1094,8 +1117,8 @@ button,
   content: "";
   top: 1px;
   left: 2px;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   border: 2px solid #f9fbfd;
   background-color: #f9fbfd;
 }
@@ -1109,8 +1132,8 @@ button,
   display: block;
   width: 12px;
   height: 8px;
-  top: 7px;
-  left: 5px;
+  top: 5px;
+  left: 4px;
   opacity: 0;
 }
 
@@ -1172,15 +1195,15 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
-  column-gap: 100px;
+  -webkit-column-gap: 98px;
+  -moz-column-gap: 98px;
+  column-gap: 98px;
   max-width: 1160px;
   margin: 120px auto;
 }
 
 .about-us__map {
-  width: 100%;
+  max-width: 560px;
   height: 306px;
   background-color: #011c40;
 }
@@ -1273,7 +1296,7 @@ button,
 
 .footer__wrap a {
   display: block;
-  padding: 12px 10px 5px 0;
+  padding: 12px 8px 5px 0;
 }
 
 .footer__list a {
@@ -1318,7 +1341,7 @@ button,
 
 .social .social__link {
   display: block;
-  padding: 13px 1px 10px 4px;
+  padding: 13px 2px 10px 3px;
 }
 
 .social__icon {
@@ -1344,9 +1367,22 @@ button,
     width: 100%;
   }
 
+  .travel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .travel__wrapper {
+    padding-right: 10px;
+  }
+
   .about-us {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .about-us__map {
+    width: 100%;
   }
 }
 
@@ -1471,6 +1507,7 @@ button,
   .travel__wrapper {
     width: 324px;
     margin-top: 0;
+    padding-right: 0;
   }
 
   .travel h2 {
@@ -1489,7 +1526,7 @@ button,
   }
 
   .cruises {
-    margin-top: 89px;
+    margin-top: 88px;
   }
 
   .cruises h2 {
@@ -1515,15 +1552,28 @@ button,
 
   .product-card h3 {
     left: 36px;
-    bottom: 8px;
+    bottom: 10px;
   }
 
   .product-card:hover h3 {
     left: 35px;
   }
 
+  .product-card ul {
+    margin-top: 39px;
+  }
+
+  .product-card li {
+    padding-top: 7px;
+    padding-bottom: 2px;
+  }
+
+  .product-card a {
+    margin-top: 19px;
+  }
+
   .contacts {
-    margin-top: 101px;
+    margin-top: 99px;
   }
 
   .contacts__inner {
@@ -1531,8 +1581,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 85px;
-    padding-bottom: 99px;
+    padding-top: 89px;
+    padding-bottom: 100px;
   }
 
   .contacts__wrapper {
@@ -1550,13 +1600,25 @@ button,
   }
 
   .contacts__form-wrapper {
-    margin-top: 53px;
+    margin-top: 52px;
     margin-right: 0;
-    padding: 44px 48px 48px 49px;
+    padding: 43px 49px 20px;
+  }
+
+  .form {
+    margin-top: 25px;
   }
 
   .form li {
-    padding-bottom: 18px;
+    padding-bottom: 17px;
+  }
+
+  .form input {
+    height: 46px;
+  }
+
+  .form button {
+    margin-top: 32px;
   }
 
   .about-us {
@@ -1565,7 +1627,7 @@ button,
     column-gap: 30px;
     padding: 0 44px;
     margin-top: 99px;
-    margin-bottom: 102px;
+    margin-bottom: 101px;
   }
 
   .about-us__map {
@@ -1602,7 +1664,7 @@ button,
 
   .footer__list {
     max-width: 475px;
-    padding-left: 9px;
+    padding-left: 11px;
   }
 
   .footer__wrap li {
@@ -1630,8 +1692,8 @@ button,
   }
 
   .social li {
-    margin-left: 6px;
-    margin-right: 3px;
+    margin-left: 9px;
+    margin-right: 1px;
   }
 
   .social .social__link {
@@ -1828,7 +1890,7 @@ button,
   }
 
   .nav__wrapper a {
-    padding: 10px 16px;
+    padding: 10px 17px;
     color: #011c40;
     font-size: 1.13rem;
     line-height: 122%;
@@ -1999,6 +2061,15 @@ button,
     left: 25px;
   }
 
+  .product-card li {
+    padding-top: 6px;
+    padding-bottom: 3px;
+  }
+
+  .product-card a {
+    margin-top: 18px;
+  }
+
   .contacts {
     padding-left: 15px;
     padding-right: 15px;
@@ -2007,7 +2078,7 @@ button,
 
   .contacts__inner {
     padding-top: 59px;
-    padding-bottom: 66px;
+    padding-bottom: 64px;
   }
 
   .contacts__wrapper {
@@ -2044,6 +2115,16 @@ button,
     padding-bottom: 18px;
   }
 
+  .form__control-mark::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form__svg {
+    top: 7px;
+    left: 6px;
+  }
+
   .form span {
     padding-top: 0;
     padding-left: 15px;
@@ -2061,7 +2142,7 @@ button,
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 57px;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 
   .about-us__map {
@@ -2110,7 +2191,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 0;
-    margin-top: 6px;
+    margin-top: 4px;
     margin-bottom: 19px;
   }
 

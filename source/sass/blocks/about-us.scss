@@ -110,7 +110,7 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  background: url("../img/svg/icon-pin.svg") no-repeat 0 -1px/18px 22px;
+  background: url("../img/svg/icon-pin.svg") no-repeat 0 0/18px 22px;
 
   @include vp-1023 {
     margin-top: 27px;
@@ -128,7 +128,7 @@
   vertical-align: middle;
   padding-left: 28px;
   color: $color-tangaroa-blue;
-  background: url("../img/svg/icon-phone.svg") no-repeat 0 0/18px 18px;
+  background: url("../img/svg/icon-phone.svg") no-repeat 0 2px/18px 18px;
 
   &:hover {
     color: $color-contacts-background;

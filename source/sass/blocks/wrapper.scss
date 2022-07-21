@@ -1,4 +1,4 @@
-.body {
+.wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,5 +8,6 @@
 }
 
 .is-lock {
-  overflow-y: hidden;
+  overflow: hidden;
+  touch-action: none;
 }

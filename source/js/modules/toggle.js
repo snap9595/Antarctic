@@ -6,6 +6,7 @@ let links = navMain.querySelectorAll('.nav__link');
 let overlay = document.querySelector('.header__overlay');
 let headerWrap = document.querySelector('.header__wrap');
 let telInput = document.querySelectorAll('input[type="tel"]');
+let wrapper = document.querySelector('.wrapper');
 
 const initToggle = () => {
   navMain.classList.remove('is-nojs');
@@ -33,8 +34,13 @@ const initToggle = () => {
     navMain.classList.toggle('is-open');
     navToggle.classList.toggle('is-open');
     logo.classList.toggle('is-blue');
-    document.body.classList.toggle('is-lock');
+    wrapper.classList.toggle('is-lock');
     headerWrap.classList.toggle('is-open');
+    if (navMain.classList.contains('is-open')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   }
 
   for (let i = 0; i < telInput.length; i++) {

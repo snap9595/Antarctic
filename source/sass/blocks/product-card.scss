@@ -58,6 +58,8 @@
 }
 
 .product-card ul {
+  overflow-y: auto;
+  height: 228px;
   margin: 0;
   margin-top: 43px;
   padding: 0;

@@ -7,11 +7,16 @@
 .footer__wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   max-width: 1160px;
   margin: 0 auto;
   padding-top: 36px;
   padding-bottom: 38px;
+
+  @include vp-1279 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
   @include vp-1023 {
     padding: 29px 31px 30px 45px;
@@ -28,7 +33,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 655px;
   padding: 0;
   padding-left: 25px;
   margin-top: 17px;
@@ -63,9 +68,10 @@
 
 .footer__wrap a {
   display: block;
-  padding: 12px 8px 5px 0;
+  padding: 14px 8px 5px 0;
 
   @include vp-1023 {
+    padding-top: 21px;
     padding-bottom: 6px;
   }
 
